@@ -28,7 +28,6 @@ a{
     text-decoration: none;
 }
 .logo{
-    display: inline-block;
     color: #000;
     font-family: 'Raleway';
     font-weight: 700;
@@ -43,11 +42,11 @@ span{
     justify-content: space-between;
 }
 .nav-section{
+    align-items: center;
     display: flex;
 }
 .nav-section .logo{
-    justify-content: center;
-    margin: 22px 93px 0 0;
+    margin-right: 93px;
 }
 .nav-list{
     max-height: 80px;
@@ -85,23 +84,26 @@ span{
 .container{
     max-width: 1200px;
     padding: 0 15px 0 15px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main{
-    padding-bottom: 200px;
-    margin-bottom: 94px;
     text-align: center;
     background-color: #2F303A;
-    color: var(--primary-bg-color);
+}
+.main-section .section:first-child{
+    padding: 200px 0;
 }
 .main-title{
-    display: inline-block;
-    margin-top: 200px;
+    width: 693px;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--primary-bg-color);
 }
 button{
     font-family: inherit;
@@ -204,8 +206,10 @@ button{
     text-align: center;
 }
 .team{
-    padding: 94px 0;
     background: #F5F4FA;
+}
+.no-padding{
+    padding-top: 0;
 }
 .team-list{
     display: flex;
@@ -213,6 +217,7 @@ button{
 }
 .team-card{
     margin-top: 50px;
+    text-align: center;
     width: 270px;
     height: 368px;
     background-color: var(--primary-bg-color);
@@ -220,15 +225,13 @@ button{
     border-radius: 0px 0px 4px 4px;
 }
 .team-member-name{
-    margin-top: 30px;
-    text-align: center;
+    padding-top: 30px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 }
 .team-member-position{
-    text-align: center;
-    margin-top: 10px;
+    padding-top: 10px;
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.18;
@@ -242,39 +245,40 @@ button{
     border-bottom: 1px solid #EEEEEE;
 }
 .portfolio-card-title{
-    margin-top: 20px;
+    padding-top: 20px;
     padding-left: 24px;
     font-size: 18px;
     line-height: 2;    
     letter-spacing: 0.06em;
 }
 .portfolio-name-industry{
-    margin-top: 4px;
-    padding-left: 24px;
+    padding: 4px 0 0 24px;
     color: var(--primary-text-color);   
     font-size: 16px;
     line-height: 1.88;
 }
 .footer-section{
+    padding: 60px 0;
     height: 252px;
     background: #2F303A;
 }
 .footer-section .logo{
-    margin-top: 60px;
-    color:#fff;
+    color: var(--primary-bg-color);
 }
 address{
     font-style: normal;
 }
-.footer-link{
-    display: inline-block;
+.footer-address{
     margin-top: 20px;
+}
+.footer-link{
     color: #FFFFFF;
     line-height: 1.71;
 }
-.footer-contacts{
-    display: inline-block;
+.footer-items-contacts{
     margin-top: 9px;
+}
+.footer-contacts{
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.71;
 }
